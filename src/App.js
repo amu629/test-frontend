@@ -7,7 +7,7 @@ function App() {
   const [msg, setMsg] = useState("");
 
   useEffect(() => {
-    fetch("/https://my-backend.onrender.com/api")
+    fetch("/https://test-backend-p2o0.onrender.com/api")
       .then(res => res.json())
       .then(data => setMsg(data.message));
   }, []);
